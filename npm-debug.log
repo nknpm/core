@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/Users/nketchum/.node/bin/npm', 'publish' ]
+2 info using npm@2.13.3
+3 info using node@v0.12.7
+4 verbose node symlink /usr/local/bin/node
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: '/Users/nketchum/Sites/node_modules/nk-core',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory /Users/nketchum/.npm/nk-core/0.0.0/package.tgz not in flight; packing
+10 verbose tar pack [ '/Users/nketchum/.npm/nk-core/0.0.0/package.tgz',
+10 verbose tar pack   '/Users/nketchum/Sites/node_modules/nk-core' ]
+11 verbose tarball /Users/nketchum/.npm/nk-core/0.0.0/package.tgz
+12 verbose folder /Users/nketchum/Sites/node_modules/nk-core
+13 info prepublish nk-core@0.0.0
+14 verbose addLocalTarball adding from inside cache /Users/nketchum/.npm/nk-core/0.0.0/package.tgz
+15 silly cache afterAdd nk-core@0.0.0
+16 verbose afterAdd /Users/nketchum/.npm/nk-core/0.0.0/package/package.json not in flight; writing
+17 verbose afterAdd /Users/nketchum/.npm/nk-core/0.0.0/package/package.json written
+18 silly publish { name: 'nk-core',
+18 silly publish   description: 'Experimental core api by NK',
+18 silly publish   version: '0.0.0',
+18 silly publish   homepage: 'http://nkwebdev.com',
+18 silly publish   repository: { type: 'git', url: 'git+https://github.com/nknpm/core.git' },
+18 silly publish   scripts: { test: 'echo \'No tests configured.\'' },
+18 silly publish   author:
+18 silly publish    { name: 'Nicholas Ketchum',
+18 silly publish      email: 'nketchum@gmail.com',
+18 silly publish      url: 'http://nkwebdev.com/' },
+18 silly publish   license: 'MIT',
+18 silly publish   tags: [ 'experimental' ],
+18 silly publish   main: 'lib/core.js',
+18 silly publish   files: [ 'lib/' ],
+18 silly publish   engines: { node: '>= 0.9' },
+18 silly publish   dependencies: { lodash: '^3.10.1' },
+18 silly publish   maintainers: [ { name: 'Nicholas Ketchum', email: 'nketchum@gmail.com' } ],
+18 silly publish   bugs: { url: 'https://github.com/nknpm/core/issues' },
+18 silly publish   readme: 'README.md',
+18 silly publish   gitHead: '621295300e1e8e6a0c1b1395bd4458dfc84ec8d4',
+18 silly publish   _id: 'nk-core@0.0.0',
+18 silly publish   _shasum: 'bb059f0d862cc78e4ea8cd29f94288297d76822f',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name nk-core
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/nk-core
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/nketchum/.npm/nk-core/0.0.0/package.tgz
+26 verbose request uri https://registry.npmjs.org/nk-core
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 12:24:01
+29 verbose request using bearer token for auth
+30 verbose request id e56e3a3dc337a2e5
+31 http request PUT https://registry.npmjs.org/nk-core
+32 http 403 https://registry.npmjs.org/nk-core
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=60',
+33 verbose headers   'content-length': '95',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Fri, 14 Aug 2015 16:24:01 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-dfw1835-DFW',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1439569441.372618,VS0,VE272' }
+34 verbose request invalidating /Users/nketchum/.npm/registry.npmjs.org/nk-core on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: "You cannot publish over the previously published version 0.0.0." : nk-core
+36 verbose stack     at CachingRegistryClient.<anonymous> (/Users/nketchum/.node/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+36 verbose stack     at Request._callback (/Users/nketchum/.node/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+36 verbose stack     at Request.self.callback (/Users/nketchum/.node/lib/node_modules/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at Request.emit (events.js:110:17)
+36 verbose stack     at Request.<anonymous> (/Users/nketchum/.node/lib/node_modules/npm/node_modules/request/request.js:1057:14)
+36 verbose stack     at Request.emit (events.js:129:20)
+36 verbose stack     at IncomingMessage.<anonymous> (/Users/nketchum/.node/lib/node_modules/npm/node_modules/request/request.js:1003:12)
+36 verbose stack     at IncomingMessage.emit (events.js:129:20)
+36 verbose stack     at _stream_readable.js:908:16
+36 verbose stack     at process._tickCallback (node.js:355:11)
+37 verbose statusCode 403
+38 verbose pkgid nk-core
+39 verbose cwd /Users/nketchum/Sites/node_modules/nk-core
+40 error Darwin 14.4.0
+41 error argv "node" "/Users/nketchum/.node/bin/npm" "publish"
+42 error node v0.12.7
+43 error npm  v2.13.3
+44 error code E403
+45 error "You cannot publish over the previously published version 0.0.0." : nk-core
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]

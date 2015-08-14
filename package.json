@@ -38,9 +38,5 @@
   "bugs": {
     "url": "https://github.com/nknpm/core/issues"
   },
-  "readme": "ERROR: No README data found!",
-  "_id": "nkdev@0.0.0",
-  "_shasum": "05b6355a17347d27ec234fb1e52b18443929512b",
-  "_resolved": "https://github.com/nknpm/nkdev/archive/55413e2.tar.gz",
-  "_from": "https://github.com/nknpm/nkdev/archive/55413e2.tar.gz"
+  "readme": "README.md"
 }
